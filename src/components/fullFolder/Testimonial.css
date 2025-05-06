@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,98.8,100..900;1,98.8,100..900&family=Sanchez:ital@0;1&display=swap');
+
+
+
+ 
+  * {
+    box-sizing: border-box;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 95vw;
+    overflow: hidden;
+  
+    margin: 80px auto;
+   
+    justify-content: center;
+
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel-card {
+    background:white;
+    
+    border-radius: 20px;
+    scroll-snap-align: center;
+    min-width: 300px;
+    max-width: 320px;
+    box-shadow: 0 0 25px #a1f2a3;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .carousel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px #29e52d;
+  }
+  
+
+ 
+  
+
+  
+  .card-imagehadingok {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 15px 0;
+  
+    filter: grayscale(100%);
+  }
+  
+  .card-info {
+    text-align: left;
+  }
+  
+  .card-name {
+    font-size: 0.9rem;
+    color: black;
+  }
+  
+  .card-titleridoy{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2px;
+   
+  }
+  
+  .details-button {
+    align-self: flex-end;
+    margin-top: 20px;
+    background: white;
+    color: black;
+    padding: 10px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .details-button:hover {
+    background: #ccc;
+  }
+  
+  .carousel-arrow {
+    font-size: 2rem;
+    color: white;
+    background-color: #29c34d;
+    border-radius: 30%;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+
+  
+
+
+  
+  @media (max-width: 507px) {
+      
+    .carousel-wrapper {
+     
+      gap: 10px;
+     
+      
+      
+      margin: 10px auto;
+     
+      justify-content: center;
+  
+    }
+
+    .carousel-card {
+     
+      box-shadow:none;
+    
+    }
+ 
+   
+  }
+
+  .App-container h2{
+
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 700;
+
+  }
+
+  .App-container span{
+
+   color:#f26a2e ;
+
+  } 
